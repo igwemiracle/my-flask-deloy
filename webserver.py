@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-@app.route("/returnJson", methods=['GET'])
+@app.route("/", methods=['GET'])
 def ReturnJson():
     if request.method == "GET":
         data = {
